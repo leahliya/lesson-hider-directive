@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="angPractice">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body ng-controller="directivePractice">
+    <!--<test-dir name="name" title ='Hello world' >-->
+    <!--<test-dir>Hello {{ name }}</test-dir>
+    <show-time></show-time>
+    {{ test }}-->
+    <ul>
+        <!--<lesson-hider ng-repeat="lesson in lessons" lesson="lesson"></lesson-hider>-->
+        <lesson-hider ng-repeat="lesson in lessons" lesson="lesson" day-alert="announceDay(lesson, day)"></lesson-hider>
+    </ul>
+    <div>{{ lesson }}</div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="./app.js"></script>
+    <script src="./lessonCtrl.js"></script>
+    <script src="./lessonService.js"></script>
+    <script src="./lessonHider.js"></script>
+    <script src="./lessonService.js"></script>
+</html>
